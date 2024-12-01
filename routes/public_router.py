@@ -12,7 +12,7 @@ templates = Jinja2Templates(directory="templates")
 @router.get("/")
 def get_root(request: Request):
     contexto = {"request": request, "index_ativo": "active"}
-    return templates.TemplateResponse("index.html", contexto)
+    return templates.TemplateResponse("inicio.html", contexto)
 
 @router.get("/sair")
 def get_sair(request: Request):
